@@ -44,6 +44,7 @@ public class Utility {
 
             result = EMAIL_VALIDATION;
         }
+        
         return result;
     }
 
