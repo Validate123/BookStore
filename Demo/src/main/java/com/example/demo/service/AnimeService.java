@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.Domain.Anime;
-import com.example.demo.Utility.Utility;
+import com.example.demo.domain.Anime;
+import com.example.demo.utility.Utility;
 import com.example.demo.repository.AnimeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

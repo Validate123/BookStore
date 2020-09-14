@@ -1,7 +1,7 @@
-package com.example.demo.Utility;
+package com.example.demo.utility;
 
-import com.example.demo.Domain.Admin;
-import com.example.demo.Domain.Anime;
+import com.example.demo.domain.Admin;
+import com.example.demo.domain.Anime;
 import com.example.demo.exeption.ResourceNotFoundExeption;
 import com.example.demo.repository.AdminRepository;
 import com.example.demo.repository.AnimeRepository;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import static com.example.demo.Utility.Constants.*;
+import static com.example.demo.utility.Constants.*;
 
 @Component
 public class Utility {

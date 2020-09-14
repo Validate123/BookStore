@@ -1,4 +1,4 @@
-package com.example.demo.Utility;
+package com.example.demo.utility;
 
 public final class Constants {
 

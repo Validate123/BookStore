@@ -1,7 +1,7 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 
-import com.example.demo.Domain.Anime;
-import com.example.demo.Utility.Utility;
+import com.example.demo.domain.Anime;
+import com.example.demo.utility.Utility;
 import com.example.demo.service.AnimeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.example.demo.Domain;
+package com.example.demo.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,11 +12,11 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Admin {
+public class Anime {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String email;
-    private String password;
+    private String name;
+    private String lastName;
 }

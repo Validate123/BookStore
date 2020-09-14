@@ -1,16 +1,14 @@
 package com.example.demo.service;
 
-import com.example.demo.Domain.Admin;
-import com.example.demo.Domain.Anime;
-import com.example.demo.Utility.Utility;
+import com.example.demo.domain.Admin;
+import com.example.demo.utility.Utility;
 import com.example.demo.repository.AdminRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-import static com.example.demo.Utility.Constants.ADMIN_EXIST;
-import static com.example.demo.Utility.Constants.EMAIL_VALIDATION;
+import static com.example.demo.utility.Constants.ADMIN_EXIST;
 
 @Repository
 @RequiredArgsConstructor
