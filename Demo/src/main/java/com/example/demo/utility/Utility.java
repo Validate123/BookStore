@@ -2,7 +2,7 @@ package com.example.demo.utility;
 
 import com.example.demo.domain.Admin;
 import com.example.demo.domain.Anime;
-import com.example.demo.exeption.ResourceNotFoundExeption;
+import com.example.demo.exeption.ResourceNotFoundException;
 import com.example.demo.repository.AdminRepository;
 import com.example.demo.repository.AnimeRepository;
 import org.springframework.stereotype.Component;
@@ -24,14 +24,14 @@ public class Utility {
 
         return animeRepository
                 .findById(id)
-                .orElseThrow(() -> new ResourceNotFoundExeption("Anime Not Found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Anime Not Found"));
     }
 
     public Admin findAdminOrThrowNotFound(int id, AdminRepository adminRepository) {
 
         return adminRepository
                 .findById(id)
-                .orElseThrow(() -> new ResourceNotFoundExeption("Anime Not Found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Anime Not Found"));
     }
 
     public String isValidEmail(String email) {
@@ -48,14 +48,14 @@ public class Utility {
         return result;
     }
 
-    public String isValidPassword(String passsword) {
+    public String isValidPassword(String password) {
 
         String result = "";
-        if(passsword.length() < PASSWORD_MIN) {
+        if(password.length() < PASSWORD_MIN) {
 
             return PASSWORD_VALIDATION_1;
         }
-        if(passsword.length() > PASSWORD_MAX) {
+        if(password.length() > PASSWORD_MAX) {
 
             return PASSWORD_VALIDATION_2;
         }

@@ -1,7 +1,7 @@
 package com.example.demo.handler;
 
 import com.example.demo.exeption.ResourceNotFoundDetails;
-import com.example.demo.exeption.ResourceNotFoundExeption;
+import com.example.demo.exeption.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import java.time.LocalDateTime;
 
 @ControllerAdvice
-public class RestExeptionHandler {
+public class RestExceptionHandler {
 
-    @ExceptionHandler(ResourceNotFoundExeption.class)
-    public ResponseEntity<ResourceNotFoundDetails> handleResourceNotFoundExeption(ResourceNotFoundExeption rnfe) {
+    @ExceptionHandler(ResourceNotFoundException.class)
+    public ResponseEntity<ResourceNotFoundDetails> handleResourceNotFoundException(ResourceNotFoundException rnfe) {
 
         return new ResponseEntity<>(
 
