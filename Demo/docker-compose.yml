@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+  teste-postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "postgres!"
+    ports:
+      - "5432:5432"
+    volumes:
+      - Java_data/var/lib/postgresql/data
+volumes:
+  Java_data:
+
+#services:
+#  db:
+#    image: mysql
+#    container_name: demo_mysql_container
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - Java_data/var/lib/mysql
+#volumes:
+#  Java_data:
